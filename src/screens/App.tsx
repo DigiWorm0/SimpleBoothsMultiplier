@@ -71,7 +71,6 @@ function App() {
                     </div>
                 </Col>
             </Row>
-            <Row className='mt-5 mb-5' />
         </Container>
     );
 }
