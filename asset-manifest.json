@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SimpleBoothsMultiplier/static/css/main.44f8b8b5.css",
+    "main.js": "/SimpleBoothsMultiplier/static/js/main.769f9ebc.js",
+    "index.html": "/SimpleBoothsMultiplier/index.html",
+    "main.44f8b8b5.css.map": "/SimpleBoothsMultiplier/static/css/main.44f8b8b5.css.map",
+    "main.769f9ebc.js.map": "/SimpleBoothsMultiplier/static/js/main.769f9ebc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44f8b8b5.css",
+    "static/js/main.769f9ebc.js"
+  ]
+}
