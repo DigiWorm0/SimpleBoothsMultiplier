@@ -1,0 +1,1 @@
+export const BIT_COUNT = 8;
