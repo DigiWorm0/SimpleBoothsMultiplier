@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import BinaryNumberPanel from '../components/BinaryNumberPanel';
-import BoothIterationPanel from '../components/BoothIterationPanel';
+import BoothIterationsTable from '../components/BoothIterationsTable';
 import useBoothsMultiplier from '../hooks/useBoothsMultiplier';
 import BinaryNumber from '../models/BinaryNumber';
 import { BIT_COUNT } from '../models/Constants';
@@ -33,7 +33,7 @@ function App() {
     return (
         <Container>
             <Row>
-                <Col md={5}>
+                <Col lg={5}>
                     <div className="mt-5 p-1">
                         <h1 className="mt-5 fw-bold">Booth's Multiplier 🔢</h1>
                         <p className="lead">A simple implementation of Booth's Multiplier in React.</p>
@@ -58,14 +58,11 @@ function App() {
                         )}
                     </div>
                 </Col>
-                <Col md={7}>
+                <Col lg={7}>
                     <div className="mt-5 p-1">
-                        {iterations.map((iteration, index) => (
-                            <BoothIterationPanel
-                                key={index}
-                                iteration={iteration}
-                            />
-                        ))}
+                        <BoothIterationsTable
+                            iterations={iterations}
+                        />
                         {iterations.length === 0 && (
                             <p className="text-muted m-5">
                                 Invalid input. Please enter a number between {minValue} and {maxValue} (inclusive).

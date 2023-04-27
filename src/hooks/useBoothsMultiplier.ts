@@ -51,11 +51,10 @@ export default function useBoothsMultiplier(a: number, b: number): BoothIteratio
 
     // Iterations
     const iterations = React.useMemo(() => {
-        const iterations: BoothIteration[] = [];
 
         // Check if a or b is out of range.
         if (a > maxValue || a < minValue || b > maxValue || b < minValue) {
-            return iterations;
+            return [];
         }
 
         // Calculate the initial product.
@@ -70,7 +69,7 @@ export default function useBoothsMultiplier(a: number, b: number): BoothIteratio
             initialProduct,
             initialProduct
         );
-        iterations.push(initialIteration);
+        const iterations: BoothIteration[] = [initialIteration];
 
         // Calculate the rest of the iterations.
         let lastIteration = initialIteration;
